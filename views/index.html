@@ -1,16 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <title>Create Post</title>
-    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova IT Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <h2>Create a Post</h2>
-    <form method="POST" action="/create">
-      <input name="title" placeholder="Title" required />
-      <textarea name="content" placeholder="Content" required></textarea>
-      <button type="submit">Create</button>
-    </form>
+    <header>
+      <div class="container">
+        <h1 class="logo">TechNova</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#contact">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Розумні IT-рішення для вашого бізнесу</h2>
+        <p>Розробка сайтів, підтримка, автоматизація</p>
+        <a href="#contact" class="btn">Зв'язатися</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>Хто ми?</h2>
+        <p>
+          TechNova — команда з 10+ років досвіду в сфері веб-розробки та
+          ІТ-консалтингу. Ми допомагаємо бізнесу зростати за допомогою сучасних
+          технологій.
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Наші послуги</h2>
+        <div class="cards">
+          <div class="card">Веб-розробка</div>
+          <div class="card">Технічна підтримка</div>
+          <div class="card">SEO та просування</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Залишити заявку</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Ім'я" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Ваше повідомлення"></textarea>
+          <button type="submit">Надіслати</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">&copy; 2025 TechNova. Усі права захищено.</div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
